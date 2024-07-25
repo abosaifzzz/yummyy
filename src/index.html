@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/WOW-master/css/libs/animate.css">
+    <script src="https://kit.fontawesome.com/6d60548e6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+
+<body class="bg-black">
+    <div class="fixed-bar  ">
+        <div class="bar-data ">
+            <div class="bar-content h-100 d-flex flex-column justify-content-between">
+                <div class="top-data p-4">
+                    <ul class="list-unstyled wow">
+
+                        <li id="search" class="wow  "><a href="#">Search</a></li>
+                        <li id="category" class="wow  "><a href="#">Category</a></li>
+                        <li id="area" class="wow  "><a href="#">Area</a></li>
+                        <li id="ingredient" class="wow  "><a href="#">Ingredients</a></li>
+                        <li class="wow  "><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="bottom-data py-4 ps-4  text-white">
+                    <span><i class="fa-brands fa-facebook"></i></span><span class="ps-2"><i
+                            class="fa-brands fa-twitter"></i></span><span class="ps-2"><i class="fa-solid fa-globe"></i>
+                    </span>
+                    <h6 class="pt-2">Copyright Â© 2019 All Rights <br>
+                        Reserved.</h6>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="bar-info py-3 d-flex flex-column justify-content-between align-items-center">
+            <img src="/CSS/assets/logo.png" alt="">
+
+            <div class="bar-controller ">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-x d-none"></i>
+
+            </div>
+
+            <div class="bar-info-social">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container position-relative py-5">
+        <div class="loading">
+            <div class="loader"></div>
+
+        </div>
+        <div id="mainMeals" class=" d-none  row g-3">
+
+            <!-- <div class=" meal-card rounded-2 col-sm-12 col-md-6 col-lg-3">
+                <img class="w-100 rounded-2" src="/CSS/assets/1525876468.jpg" alt="">
+                <div class="meal-overlay">
+                    <h2>Sushi</h2>
+
+                </div>
+            </div> -->
+
+
+
+        </div>
+        <div id="meal-details" class="meal-details d-none py-5">
+            <div class="container-fluid p-0 text-white">
+                <div class="container-fluid meal-content   p-0 ">
+
+                    <div class="container d-flex  flex-column justify-content-center align-items-center px-0 pt-5   ">
+                        <div class="top px-3 d-flex justify-content-between w-100">
+                            <span class="slogan float-start">Meal Details</span>
+                            <span id="closeMeal" class="closeMeal">Back to Home <i
+                                    class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </div>
+
+                        <div id="meal-data" class="container-fluid  d-lg-flex gap-3 p-4">
+                            <!-- <div class="meal-img-lg ">
+
+                                    <img src="/CSS/assets/58oia61564916529.jpg" alt="">
+
+                                </div>
+                                <div class="meal-types pt-2">
+                                    <div class="meal-name-lg">
+                                        Instructions
+
+                                    </div>
+
+
+                                    <div class="meal-desc-lg">
+
+
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo deserunt,
+                                        sapiente odit sunt omnis dicta commodi voluptatum illo eaque voluptatem similiq
+                                        Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Obcaecati qui consequuntur dicta
+                                        hic
+                                        dolorum voluptates minima dolorem, expedita rerum mollitia sunt laborum porro
+                                        maiores.
+                                        Ea eius consectetur tempora voluptate adipisci. Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Fugit pariatur consequatur et eius dolor accusamus earum facilis.
+                                        Ab
+                                        voluptatibus dolores minima eaque exercitationem molestias consequatur facilis
+                                        laudantium pariatur, officia molestiae. Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Dolores libero laborum saepe vel, dolore adipisci tempora neque
+                                        quo
+                                    </div>
+                                    <div class="meal-details-lg pt-3">
+                                        <h3>Area: <span>MMOPRG</span></h3>
+                                        <h3>Category: <span>Windows</span></h3>
+
+                                    </div>
+                                    <div class="recipes d-sm-block d-md-flex d-lg-flex d-xl-flex">
+                                        <h3>Recipes:</h3>
+                                        <div class="d-flex ps-2  flex-wrap w-100 ">
+                                            <div class="recipe mt-2 me-2  ">
+                                                3 tbs Mayonnaise and catchup
+                                            </div>
+                                            <div class="recipe mt-2 me-2   ">
+                                                300 ml Suchi Rice
+                                            </div>
+                                            <div class="recipe mt-2 me-2 ">
+                                                2 tbs Caster Sugar
+                                            </div>
+                                            <div class="recipe mt-2 me-2 ">
+                                                300 ml Suchi Rice
+                                            </div>
+                                            <div class="recipe mt-2 me-2 ">
+                                                300 ml Suchi Rice
+                                            </div>
+                                            <div class="recipe mt-2 me-2 ">
+                                                300 ml Suchi Rice
+                                            </div>
+                                            <div class="recipe mt-2 me-2 ">
+                                                300 ml Suchi Rice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tags pt-3 d-sm-block d-md-flex d-lg-flex d-xl-flex">
+                                        <h3>Tags:</h3>
+                                        <div class="d-flex ps-2  flex-wrap w-100 ">
+                                            <div class="tag mt-2 me-2  ">
+                                                Source </div>
+                                            <div class="tag mt-2 me-2   ">
+                                                Youtube
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sources pt-3 d-sm-block d-md-flex d-lg-flex d-xl-flex">
+                                        <div class="d-flex ps-2  flex-wrap w-100 ">
+
+                                            <div class="source mt-2 me-2  ">
+                                                Source </div>
+                                            <div class="youtube mt-2 me-2   ">
+                                                Youtube
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="search-page" class="search-page d-none ">
+            <div class="container d-flex flex-column  text-warning">
+                <div class="search-inputs container d-flex ">
+                    <div class="w-50"> <input id="name-search" type="text" placeholder="Search by Name"></div>
+                    <div class="w-50"> <input id="firstLetter" type="text" placeholder="Search by First Letter">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="search-meals" class="search-meals pt-5 gy-4 row">
+
+                <!-- <div class=" meal-card rounded-2 col-sm-12 col-md-6 col-lg-3">
+                        <img class="w-100 rounded-2" src="/CSS/assets/1525876468.jpg" alt="">
+                        <div class="meal-overlay">
+                            <h2>Sushi</h2>
+
+                        </div>
+                    </div> -->
+
+
+            </div>
+
+
+        </div>
+        <div id="categories" class=" d-none row g-3">
+
+            <!-- <div class=" category-card rounded-2 col-sm-12 col-md-6 col-lg-3">
+                <img class="w-100 rounded-2" src="/CSS/assets/1525876468.jpg" alt="">
+                <div class="category-overlay">
+                    <h2>Sushi</h2>
+
+                </div>
+            </div>
+             -->
+
+
+        </div>
+        <div id="mainCategory" class=" d-none  row g-3">
+
+            <!-- <div class=" meal-card rounded-2 col-sm-12 col-md-6 col-lg-3">
+                <img class="w-100 rounded-2" src="/CSS/assets/1525876468.jpg" alt="">
+                <div class="meal-overlay">
+                    <h2>Sushi</h2>
+
+                </div>
+            </div>
+           -->
+
+
+
+        </div>
+        <div id="areas" class=" d-none row g-3">
+
+            <!-- <div class=" area-card rounded-2 col-sm-6 col-md-3 col-lg-2">
+                <img class="w-100 rounded-2" src="/CSS/assets/world.png" alt="">
+                <div class="area-overlay">
+                    <h2>Sushi</h2>
+
+                </div>
+            </div> -->
+
+
+
+
+        </div>
+        <div id="mainArea" class=" d-none row g-3">
+
+            <!-- <div class=" meal-card rounded-2 col-sm-12 col-md-6 col-lg-3">
+                <img class="w-100 rounded-2" src="/CSS/assets/1525876468.jpg" alt="">
+                <div class="meal-overlay">
+                    <h2>Sushi</h2>
+
+                </div>
+            </div> -->
+
+
+
+
+        </div>
+        <div id="ingredients" class=" d-none row g-3">
+            <!-- 
+            <div class=" ingredients-card rounded-2 col-sm-6 col-md-3 col-lg-2">
+                <img class="w-100 rounded-2"
+                    src="/CSS/assets/pizza-concept-with-food-and-cooking-ingredients-in-circle-shape-vector-illustration-2EAXN6F_prev_ui.png"
+                    alt="">
+                <div class="ingredients-overlay">
+                    <h2>Sushi</h2>
+
+                </div>
+            </div> -->
+
+
+
+
+
+        </div>
+        <div id="mainIngredient" class=" d-none row g-3">
+            <!-- 
+            <div class=" meal-card rounded-2 col-sm-12 col-md-6 col-lg-3">
+                <img class="w-100 rounded-2" src="/CSS/assets/1525876468.jpg" alt="">
+                <div class="meal-overlay">
+                    <h2>Sushi</h2>
+
+                </div>
+            </div> -->
+
+
+        </div>
+
+        <div class="contact-page">
+            <div class="container mt-5 d-flex flex-column align-items-center justify-content-center text-white">
+                <h1>For more better Service <span>Contact Us </span> </h1>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
